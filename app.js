@@ -62,7 +62,7 @@ const store = MongoStore.create({
 
 store.on("error", () => {
   console.log("ERROR in MONGO SESSION STORE", err);
-})
+});
 
 //session options
 const sessionOptions = {
