@@ -1,0 +1,54 @@
+<% layout("layouts/boilerplate.ejs") -%>
+<br>
+  
+  <form
+    action="http://localhost:3030/blogs/<%=blog._id %>?_method=PUT"
+    method="post"
+    id="update-form"
+  >
+  <h3>Update the Blog</h3>
+  <br>
+    <label for="title">Title :</label>
+    <input
+      type="text"
+      name="title"
+      id="title"
+      value="<%= blog.title %>"
+      placeholder="Enter Title"
+    />
+    <label for="summary">Summary :</label>
+    <input
+      type="text"
+      name="summary"
+      id="summary"
+      value="<%= blog.summary %>"
+      placeholder="Enter summary"
+    />
+    <label for="content">Content :</label>
+    <textarea name="content" id="content" rows="5" cols="15">
+<%= blog.content %></textarea>
+    >
+ 
+    <label for="image">Image : </label>
+    <input
+      type="text"
+      name="image"
+      id="image"
+      value="<%= blog.image %>"
+      placeholder="Enter image link"
+    />
+    <button type="submit" id="updateBtn">Update</button>
+  </form>
+  <script>
+    tinymce.init({
+      selector: "#content",
+      plugins: "a11ychecker advcode casechange formatpainter linkchecker paste",
+      toolbar:
+        "undo redo | bold italic | alignleft aligncenter alignright | link image",
+      //   valid_elements: 'p,b,strong,i,em,ul,ol,li,a[href]', // Specify allowed elements
+      invalid_elements: "script,style,iframe",
+      paste_as_text: true,
+      format: "raw",
+    });
+  </script>
+

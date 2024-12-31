@@ -1,0 +1,24 @@
+<%- layout("layouts/boilerplate.ejs") -%>
+<br><br><br><br>
+<form action="/login" method="POST">
+    <h3 style="margin-bottom: 1rem;">Login with your Credential.</h3>
+    <label for="username">Username :</label>
+    <input
+      type="text"
+      name="username"
+      id="username"
+      placeholder="Enter Username"
+      required
+    />
+    
+    <label for="pass">Password :</label>
+    <input
+      type="password"
+      name="password"
+      id="pass"
+      placeholder="Enter Password"
+      required
+    />
+    <span style="display: inline-block; margin-bottom: 1rem;">Not yet register? <a href="/signup"><b>Signup</b></a></span>
+    <button id="loginBtn">Login</button>
+</form>

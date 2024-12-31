@@ -1,0 +1,60 @@
+/* General styling for the blog container */
+.blog-container {
+    
+    padding: 20px;
+    margin: 20px auto;
+    max-width: 800px;
+    width: 100%;
+    border-radius: 8px;
+  
+    font-family: Arial, sans-serif;
+    color: #333;
+}
+
+/* Blog title styling */
+.blog-container h1 {
+    font-size: 2rem;
+    color: #333;
+    font-weight: bold;
+    margin-bottom: 10px;
+    line-height: 1.3;
+}
+
+/* Blog creation date styling */
+.blog-container p {
+    font-size: 1rem;
+    color: #777;
+    margin: 5px 0;
+}
+
+/* Blog image styling */
+.blog-container img {
+    width: 100%;
+    height: auto;
+    margin: 15px 0;
+    border-radius: 8px;
+    object-fit: cover;
+}
+
+/* Blog content styling */
+.blog-container p:last-of-type {
+    font-size: 1.1rem;
+    color: #444;
+    line-height: 1.6;
+    margin-top: 10px;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+    .blog-container {
+        padding: 15px;
+    }
+
+    .blog-container h1 {
+        font-size: 1.7rem;
+    }
+
+    .blog-container p {
+        font-size: 0.95rem;
+    }
+}

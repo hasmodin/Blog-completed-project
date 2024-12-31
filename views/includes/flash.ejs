@@ -1,0 +1,19 @@
+
+
+
+<div class="flash-success">
+  <%  if(successMsg && successMsg.length) { %>
+        <p style="background-color: green; padding: 0.5rem; color: white; margin: 1rem auto; width: 100%; max-width: 800px; font-size: 1.2rem; text-align: center;">
+            <%= successMsg %></p>
+
+  <%  } %>
+</div>
+
+<div class="flash-error">
+    <%  if(errorMsg && errorMsg.length) { %>
+          <p style="background-color: red; padding: 0.5rem; color: white; margin: 1rem auto; width: 100%; max-width: 800px; font-size: 1.2rem; text-align: center;">
+              <%= errorMsg %></p>
+  
+    <%  } %>
+  </div>
+

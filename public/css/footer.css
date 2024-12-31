@@ -1,0 +1,35 @@
+/* General Footer Styling */
+footer {
+    background-color: #333;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    font-size: 1rem;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+/* Footer text styling */
+footer p {
+    margin: 5px 0;
+    font-size: 1rem;
+}
+
+/* Link styling inside footer (optional) */
+footer a {
+    color: #fff;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+/* Responsive design */
+@media (max-width: 600px) {
+    footer {
+        font-size: 0.9rem;
+        padding: 15px;
+    }
+}

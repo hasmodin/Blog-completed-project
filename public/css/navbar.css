@@ -1,0 +1,77 @@
+/* General reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Navigation container */
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 30px;
+    background-color: #333;
+}
+
+/* Logo section */
+.nav-logo ul {
+    list-style: none;
+}
+
+.nav-logo ul li a {
+    color: white;
+    font-size: 1.5rem;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* Navigation links section */
+.nav-links ul {
+    list-style: none;
+    display: flex;
+}
+
+.nav-links ul li {
+    margin-left: 20px;
+}
+
+.nav-links ul li a {
+    color: white;
+    font-size: 1.1rem;
+    text-decoration: none;
+    padding: 8px 15px;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+}
+
+/* Hover effect for navigation links */
+.nav-links ul li a:hover {
+    background-color: #575757;
+}
+
+/* Responsive styling */
+@media (max-width: 768px) {
+    nav {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .nav-links ul {
+        flex-direction: column;
+        margin-top: 10px;
+    }
+
+    .nav-links ul li {
+        margin-left: 0;
+        margin-bottom: 10px;
+    }
+
+    .nav-logo ul li a {
+        font-size: 1.2rem;
+    }
+
+    .nav-links ul li a {
+        font-size: 1rem;
+    }
+}
